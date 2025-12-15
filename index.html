@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Places Hub</title>
+    <!-- Import Google Fonts: Unbounded for headlines, Rubik for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <header>
+        <nav>
+            <img src="img/done/logo.png" alt="Hidden Places Hub Logo" class="logo">
+            <ul>
+                <li><a href="#get-started">Get Started</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#pick-hub">Pick Up a Hub</a></li>
+                <li><a href="#Search">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero section with big image -->
+    <section class="hero">
+        <h6>Discover</h6>
+        <h1>Come as you are, create freely</h1>
+        <p>Three creative spaces where people work with their hands, share ideas, and build without judgment. No experience needed.</p>
+        <img src="img/done/banermain.jpg" alt="Hero Image">
+    </section>
+
+    <!-- Section with headline, small text, and 3 cards (half text, half image) -->
+    <section class="spaces">
+        <p>Start</p>
+        <h2>All backgrounds welcome</h2>
+        <p>Just show up. No experience needed. Everyone belongs here.</p>
+        <ul class="cards">
+            <li>
+                <article class="card">
+                    <h6>~Godsbanen</h6>
+                    <h3>Print, paint & build at Godsbanen</h3>
+                    <p>A workshop where screen printing and metalwork happen daily. Watch people create, then join them.</p>
+                    <img src="img/done/ceramics.jpg" alt="Godsbanen">
+                </article>
+            </li>
+            <li>
+                <article class="card">
+                    <h3>Raw workshop, real makers</h3>
+                    <p>Youth culture meets hands-on making. Ceramics, screen printing, and more.</p>
+                    <img src="img/done/gods1.jpg" alt="UKH">
+                </article>
+            </li>
+            <li>
+                <article class="card">
+                    <h3>Breaking the rules on purpose</h3>
+                    <p>Where off the grid initiatives transform urban architecture and revitalise unused spaces.</p>
+                    <img src="img/done/ukh1.jpg" alt="X">
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <!-- How to get started section -->
+    <section class="how-to">
+        <h2>How to Get Started</h2>
+        <ul class="steps">
+            <li>
+                <article class="step">
+                    <h3>Step 1: Choose Your Hub</h3>
+                    <p>Choose Godsbanen, Ungdomsulturhuset, or Institut for X, based on what calls you.</p>
+                </article>
+            </li>
+            <li>
+                <article class="step">
+                    <h3>Step 2: Show up and learn</h3>
+                    <p>Brief orientation on types of initiatives. No tests. No judgement. Just clarity.</p>
+                </article>
+            </li>
+            <li>
+                <article class="step">
+                    <h3>Step 3: Make your first thing</h3>
+                    <p>Start small. Get your hands working. The rest follows naturally from there.</p>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Big image section named 'start' -->
+    <section id="start">
+        <img src="img/done/start.jpg" alt="Start Image">
+        <button id="start-explore-btn">Explore</button>
+    </section>
+
+    <!-- Logistics section  -->
+    <section class="logistics">
+        <aside>
+            <img src="img/done/opens.jpg" alt="Logistics Photo">
+        </aside>
+        <article>
+            <h6>Logistics</h6>
+            <h2>Hours, fees & how to access</h2>
+            <p>Hours, fees and how to find a hub. Everything you need in one place.</p>
+            <button id="explore-btn">Explore</button>
+        </article>
+    </section>
+
+    <!-- Questions section with 2 rows, 3 columns for Q&A -->
+    <section class="faq">
+        <h2>Questions</h2>
+        <dl class="qa-grid">
+            <dt>What is Hidden Places Hub?</dt>
+            <dd>A community space for creative expression without judgment.</dd>
+            <dt>Do I need experience?</dt>
+            <dd>No, all levels are welcome.</dd>
+            <dt>How much does it cost?</dt>
+            <dd>Sessions start at $20 per hour.</dd>
+            <dt>Can I bring my own materials?</dt>
+            <dd>Yes, but we provide tools and supplies.</dd>
+            <dt>Is there parking?</dt>
+            <dd>Street parking available nearby.</dd>
+            <dt>What if I break something?</dt>
+            <dd>Accidents happen; we have insurance.</dd>
+        </dl>
+    </section>
+
+    <!-- Footer with options on left, map on right, privacy at bottom -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#get-started">How to Get Started</a></li>
+                <li><a href="#pick-hub">Pick Up a Hub</a></li>
+                <li><a href="#hours">Hours</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+        <aside class="map">
+            <!-- Placeholder for map; embed Google Map -->
+            <img src="img/done/banerukh.jpg" alt="Map Placeholder">
+        </aside>
+       
+    </footer>
+
+    <!-- JavaScript for button click -->
+    <script>
+        // Add event listener to explore button
+        document.getElementById('explore-btn').addEventListener('click', function() {
+            alert('Exploring logistics!');
+        });
+        // Add event listener to start explore button
+        document.getElementById('start-explore-btn').addEventListener('click', function() {
+            alert('Exploring start!');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts: Rubik for body, Unbounded for headlines */
+body {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.6;
+
+}
+
+h1, h2, h3 {
+    font-family: 'Unbounded', sans-serif;
+}
+
+/* Header navigation */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #38181c;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+   
+}
+
+.logo {
+    height: 50px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header li {
+    margin-left: 2rem;
+}
+
+header a {
+    text-decoration: none;
+    color:#f8edee
+;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #70ffc3;
+}
+
+
+/* Hero section */
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f8edee;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    max-width: 600px;
+}
+
+/* Spaces section */
+.spaces {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #d0868e;
+}
+
+.spaces h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f8edee;
+}
+
+.spaces p {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    color: #f8edee;
+}
+
+.cards {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    color: #f8edee;
+}
+
+.card {
+    display: flex;
+    background: #38181c;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex: 1;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.card p {
+    flex: 1;
+    padding: 2rem;
+}
+
+.card img {
+    width: 50%;
+    object-fit: cover;
+}
+
+/* How to section */
+.how-to {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #38181c;
+}
+
+.how-to h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #f8edee;
+}
+
+.steps {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.step {
+    flex: 1;
+    color: #f8edee;
+}
+
+
+.step h3 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+/* Start section */
+#start {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#start img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#start button {
+    background: #70ffc3;
+    color: #38181c;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+}
+
+#start button:hover {
+    background: #0056b3;
+}
+
+/* Logistics section */
+.logistics {
+    display: flex;
+    padding: 4rem 2rem;
+    align-items: center;
+    background-color: #d0868e;
+}
+
+.logistics aside {
+    flex: 1;
+}
+
+.logistics aside img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.logistics article {
+    flex: 1;
+    padding-left: 2rem;
+    color: #f8edee;
+}
+
+.logistics h2 {
+    margin-bottom: 1rem;
+}
+
+.logistics h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    background: #70ffc3;
+    color: #38181c;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+}
+
+button:hover {
+    background:#70ffc3;
+}
+
+/* FAQ section */
+.faq {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f8edee;
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #38181c;
+}
+
+.qa-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.qa-grid dt {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.qa-grid dd {
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #38181c;
+}
+
+footer nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+footer li {
+    margin-right: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f8edee;
+}
+
+.map {
+    flex: 1;
+    text-align: right;
+}
+
+.map img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+footer p {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .card {
+        flex-direction: column;
+    }
+    
+    .card img {
+        width: 100%;
+    }
+    
+    .cards {
+        flex-direction: column;
+    }
+    
+    .steps {
+        flex-direction: column;
+    }
+    
+    .logistics {
+        flex-direction: column;
+    }
+    
+    .logistics article {
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+    
+    .qa-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .map {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    footer p {
+        position: static;
+        transform: none;
+        margin-top: 1rem;
+    }
+}
