@@ -92,9 +92,6 @@ header a:hover {
     padding: 4rem 2rem;
     text-align: center;
     background-color: #d0868e;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
 }
 
 .spaces h2 {
@@ -110,6 +107,10 @@ header a:hover {
     color: #f8edee;
 }
 
+.spaces header {
+    margin-bottom: 3rem;
+}
+
 .cards {
     display: flex;
     gap: 2rem;
@@ -120,12 +121,17 @@ header a:hover {
 }
 
 .card {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background: #38181c;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     overflow: hidden;
-    flex: 1;
+}
+
+.card h6, .card h3, .card p {
+    grid-column: 1;
+    padding: 1rem 2rem;
 }
 
 .card h3 {
@@ -134,12 +140,13 @@ header a:hover {
 }
 
 .card p {
-    flex: 1;
-    padding: 2rem;
+    margin-bottom: 1rem;
 }
 
 .card img {
-    width: 50%;
+    grid-column: 2;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -174,24 +181,33 @@ header a:hover {
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
+.step button {
+    background: #70ffc3;
+    color: #38181c;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+}
+
+.step button:hover {
+    background: #5ae0a8;
+}
 
 /* Start section */
 #start {
-    position: relative;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 4rem 60px;
+    text-align: center;
+    background-color: #38181c;
 }
 
 #start img {
-    position: absolute;
-    top: 0;
-    left: 0;
+    max-width: 1200px;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
 }
 
 #start button {
@@ -202,6 +218,8 @@ header a:hover {
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Rubik', sans-serif;
+    display: block;
+    margin: 1rem auto 0;
 }
 
 #start button:hover {
@@ -325,4 +343,58 @@ footer p {
     left: 50%;
     transform: translateX(-50%);
     font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .card {
+        grid-template-columns: 1fr;
+    }
+    
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .cards {
+        flex-direction: column;
+    }
+    
+    .logistics {
+        flex-direction: column;
+    }
+    
+    .logistics article {
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+    
+    .qa-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .map {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    footer p {
+        position: static;
+        transform: none;
+        margin-top: 1rem;
+    }
 }
