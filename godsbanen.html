@@ -19,7 +19,11 @@
                 <li><a href="#get-started">Get Started</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#pick-hub">Pick Up a Hub</a></li>
-                <li><a href="#Search">Search</a></li>
+                <li>
+                    <form action="#" method="get" class="search-form">
+                        <input type="search" name="q" placeholder="Search hubs...">
+                        <button type="submit">Search</button>
+                    </form>
             </ul>
         </nav>
     </header>
@@ -127,10 +131,26 @@
         
     </footer>
 
-    <!-- JavaScript -->
+     <!-- JavaScript for button click and search -->
     <script>
-        document.getElementById('schedule-btn').addEventListener('click', function() {
-            alert('Scheduling!');
+        // Add event listener to explore button
+        document.getElementById('explore-btn').addEventListener('click', function() {
+            alert('Exploring logistics!');
+        });
+
+        // Search functionality
+        document.querySelector('.search-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const query = this.q.value.toLowerCase();
+            const cards = document.querySelectorAll('.cards li');
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                if (text.includes(query)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
         });
     </script>
 </body>

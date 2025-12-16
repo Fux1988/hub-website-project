@@ -50,6 +50,40 @@ header a:hover {
     color: #70ffc3;
 }
 
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input {
+    padding: 0.5rem;
+    border: 1px solid #f8edee;
+    border-radius: 5px 0 0 5px;
+    background: transparent;
+    color: #f8edee;
+    font-family: 'Rubik', sans-serif;
+}
+
+.search-form input::placeholder {
+    color: #f8edee;
+    opacity: 0.7;
+}
+
+.search-form button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #f8edee;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    background: #f8edee;
+    color: #38181c;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+.search-form button:hover {
+    background: #70ffc3;
+}
 .hero {
     position: relative;
     height: 80vh;
