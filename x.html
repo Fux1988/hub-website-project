@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X- Hidden Places Hub</title>
+    <!-- Import Google Fonts: Unbounded for headlines, Rubik for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="godsbanen.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/done/logo.png" alt="Hidden Places Hub Logo" class="logo"></a>
+            <ul>
+                <li><a href="#get-started">Get Started</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#pick-hub">Pick Up a Hub</a></li>
+                <li>
+                    <form action="#" method="get" class="search-form">
+                        <input type="search" name="q" placeholder="Search hubs...">
+                        <button type="submit">Search</button>
+                    </form>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero image -->
+    <section class="hero">
+        <h6>Discover</h6>
+        <h1>Institut for X</h1>
+        <p>Raw energy, real people, no gatekeeping here.</p>
+        <img src="img/done/banerx.jpg" alt="Hero Image">
+    </section>
+
+    <!-- Find section -->
+    <section class="find">
+        <h2>Find what you want to learn</h2>
+        <p>Workshops and Restaurant Gods has its own schedule, so check it below
+           for more.</p>
+        <a href="https://godsbanen.dk/kalender/" target="_blank" id="schedule-btn">Schedule</a>
+    </section>
+
+    <!-- Hub section -->
+    <section class="hub">
+        <article>
+            <p>Institut for X</p>
+            <h2>Guided Tour</h2>
+            <p>Fee : 1000 dkk per hour guide</p>
+           
+            <button class="book-btn">Book</button>
+            <button class="more-info-btn">More Info</button>
+        </article>
+        <aside>
+            <img src="img/done/x6.jpg" alt="Godsbanen Image">
+        </aside>
+    </section>
+
+    <!-- Hours section -->
+    <section class="hours">
+        <h2>Hours & how to access</h2>
+        <p>Hours, fees and how to find a hub. Everything you need to know in one place.</p>
+        <ul class="hours-list">
+            <li>
+                <article>
+                    <h3>Opening Hours</h3>
+                    <p>Mon - Tue 14 - 21<br>Wed & Thu 10  - 16<br>1st Sunday of the month 10 - 15</p>
+                    <button>Schedule</button>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h3>Contact</h3>
+                    <p>Email: info@institutforx.dk<br>Phone: +45 12 34 56 78</p>
+                    <button>Contact Us</button>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h3>Address</h3>
+                    <p>Godsbanen<br>Tage-Hansens gade 8B<br>8000 Aarhus C</p>
+
+            <!-- Social media icons and directions button -->
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Godsbanen" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/godsbanen" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <button>Get Directions</button>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Calling section -->
+    <section class="calling">
+        <h2>Find what calls you</h2>
+        <p>Walk with nothing but curiosity and find yourr spacee.</p>
+        <ul class="calling-list">
+            <li>
+                <article>
+                    <h3>Learn at your pace</h3>
+                    <p>No rush, no judgement. Take your time you need to understand each step.</p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h3>Get trained</h3>
+                    <p>Most tools need a quick safety talk. It takes minutes. Then you’re ready.</p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h3>Make</h3>
+                    <p>Pick up a tool. Start your project. The rest happens on its own.</p>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#get-started">How to Get Started</a></li>
+                <li><a href="#pick-hub">Pick Up a Hub</a></li>
+                <li><a href="#hours">Hours</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+         <aside class="map">
+            <!-- Embedded Google Map pinning Godsbanen, Ungdomskulturhuset, and Institut for X in Aarhus, Denmark -->
+            <iframe src="https://maps.google.com/maps?q=Godsbanen,Aarhus;Ungdomskulturhuset,Aarhus;Institut for X,Aarhus&output=embed" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </aside>
+        
+    </footer>
+
+     <!-- JavaScript for button click and search -->
+    <script>
+        // Add event listener to explore button
+        document.getElementById('explore-btn').addEventListener('click', function() {
+            alert('Exploring logistics!');
+        });
+
+        // Search functionality
+        document.querySelector('.search-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const query = this.q.value.toLowerCase();
+            const cards = document.querySelectorAll('.cards li');
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                if (text.includes(query)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
