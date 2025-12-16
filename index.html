@@ -93,7 +93,7 @@
     <!-- Big image section named 'start' -->
     <section id="start">
         <img src="img/done/start.jpg" alt="Start Image">
-        <button id="schedule-btn">Schedule</button>
+        <a href="hubs.html" id="schedule-btn">Start</a>
     </section>
 
     <!-- Logistics section  -->
@@ -146,13 +146,8 @@
        
     </footer>
 
-    <!-- JavaScript for button click and search -->
+    <!-- JavaScript for search -->
     <script>
-        // Add event listener to explore button
-        document.getElementById('explore-btn').addEventListener('click', function() {
-            alert('Exploring logistics!');
-        });
-
         // Search functionality
         document.querySelector('.search-form').addEventListener('submit', function(e) {
             e.preventDefault();

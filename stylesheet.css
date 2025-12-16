@@ -249,7 +249,7 @@ header a:hover {
     margin: 0 auto;
 }
 
-#start button {
+#start a {
     background: #70ffc3;
     color: #38181c;
     border: none;
@@ -257,12 +257,13 @@ header a:hover {
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Rubik', sans-serif;
-    display: block;
-    margin: 1rem auto 0;
+    display: inline-block;
+    margin: 1rem 0 0;
+    text-decoration: none;
 }
 
-#start button:hover {
-    background: #0056b3;
+#start a:hover {
+    background: #d0868e;
 }
 
 /* Logistics section */
@@ -308,7 +309,7 @@ button {
 }
 
 button:hover {
-    background:#70ffc3;
+    background: #bd535b;
 }
 
 /* FAQ section */
