@@ -195,7 +195,7 @@ header a:hover {
     align-self: end;
     background: transparent;
     color: #70ffc3;
-    border: none;
+    border: 1px solid #70ffc3;
 }
 
 .card button:hover {
