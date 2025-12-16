@@ -170,13 +170,13 @@ header a:hover {
 }
 
 .hub aside {
-    flex: 1;
+    flex: 0 0 40%;
     text-align: right;
 }
 
 .hub aside img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }

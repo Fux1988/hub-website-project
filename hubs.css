@@ -84,6 +84,108 @@ header a:hover {
     max-width: 600px;
 }
 
+/* Find section */
+.find {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #d0868e;
+}
+
+.find h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f8edee;
+}
+
+.find p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #f8edee;
+}
+
+.find button {
+    background: #70ffc3;
+    color: #38181c;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+/* Hub section */
+.hub {
+    display: flex;
+    padding: 4rem 2rem;
+    align-items: center;
+    background-color: #Bd535e;
+}
+
+.hub.reverse {
+    flex-direction: row-reverse;
+}
+
+.hub.reverse article {
+    text-align: right;
+}
+
+.hub article {
+    flex: 1;
+}
+
+.hub article h2 {
+    margin-bottom: 1rem;
+    color: #f8edee;
+}
+
+.hub article p {
+    margin-bottom: 2rem;
+    color: #f8edee;
+}
+
+.hub .book-btn {
+    background: #70ffc3;
+    color: #38181c;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    margin-right: 1rem;
+}
+
+.hub .book-btn:hover {
+    background: #5ae0a8;
+}
+
+.hub .more-info-btn {
+    background: transparent;
+    color: #38181c;
+    border: 1px solid #38181c;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+}
+
+.hub .more-info-btn:hover {
+    background: #38181c;
+    color: #f8edee;
+}
+
+.hub aside {
+    flex: 0 0 40%;
+    text-align: right;
+}
+
+.hub aside img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
 /* Calling section */
 .calling {
     padding: 4rem 2rem;
