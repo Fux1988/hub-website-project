@@ -219,7 +219,7 @@ header a:hover {
 .hours {
     padding: 4rem 2rem;
     text-align: center;
-    background-color: #38181c;
+    background-color: #d0868e;
 }
 
 .hours h2 {
@@ -243,19 +243,19 @@ header a:hover {
 }
 .hours-list article {
     flex: 1;
-    background: #f8edee;
+    background: #38181c;
     padding: 2rem;
     border-radius: 10px;
 }
 
 .hours-list h3 {
     margin-bottom: 1rem;
-    color: #38181c;
+    color: #f8edee;
 }
 
 .hours-list p {
     margin-bottom: 1rem;
-    color: #38181c;
+    color: #f8edee;
 }
 
 .hours-list button {
@@ -270,6 +270,22 @@ header a:hover {
 
 .hours-list button:hover {
     background: #5ae0a8;
+}
+
+.social-icons {
+    margin: 1rem 0;
+}
+
+.social-icons a {
+    color: #f8edee;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #70ffc3;
 }
 
 /* Calling section */
