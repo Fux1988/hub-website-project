@@ -190,8 +190,8 @@ header a:hover {
 
 .hub .more-info-btn {
     background: transparent;
-    color: #38181c;
-    border: 1px solid #38181c;
+    color: #70ffc3;
+    border: 1px solid #70ffc3;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
@@ -259,8 +259,8 @@ header a:hover {
 }
 
 .hours-list button {
-    background: #70ffc3;
-    color: #38181c;
+    background-color: #38181c;
+    color: #70ffc3;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
