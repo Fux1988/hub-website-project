@@ -298,6 +298,22 @@ header a:hover {
     margin-bottom: 1rem;
 }
 
+.logistics a {
+    background: #70ffc3;
+    color: #38181c;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.logistics a:hover {
+    background: #5ae0a8;
+}
+
 button {
     background: #70ffc3;
     color: #38181c;
