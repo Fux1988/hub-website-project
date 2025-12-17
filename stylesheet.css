@@ -193,8 +193,8 @@ header a:hover {
     grid-column: 1;
     margin: 1rem 2rem;
     align-self: end;
-    background: transparent;
-    color: #70ffc3;
+    background: #5ae0a8;
+    color: #38181c;
     border: 1px solid #70ffc3;
     border-radius: 5px;
     display: inline-block;
